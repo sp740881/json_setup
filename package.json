@@ -1,15 +1,19 @@
 {
-  "name": "bankingapp-mock-api",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start" : "node server.js"
+    "server1": "json-server --watch db.json",
+    "server": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.17.1"
+    "cors": "^2.8.5",
+    "json-server": "^0.17.3",
+    "nodemon": "^2.0.22"
   }
 }
